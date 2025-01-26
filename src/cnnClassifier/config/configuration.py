@@ -5,6 +5,7 @@ from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareBaseModelConfig,
                                                 PrepareCallbacksConfig)
 
+
 class ConfigurationManager:
     def __init__(
             self,
