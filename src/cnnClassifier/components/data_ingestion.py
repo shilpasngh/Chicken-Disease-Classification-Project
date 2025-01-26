@@ -35,6 +35,8 @@ class DataIngestion:
             logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")  
     '''
 
+    ssl._create_default_https_context = ssl._create_unverified_context
+    
     def download_file(self):
         if not os.path.exists(self.config.local_data_file):
             try:

@@ -1,1 +1,8 @@
-key: value
+AUGMENTATION: True # This parameter indicates whether data augmentation should be applied to the training images
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model # 224, 224 are the height and width of the image, and 3 is the number of color channels (RGB: red, green, and blue).
+BATCH_SIZE: 16 #  Defines the number of samples that will be passed through the network at one time.
+INCLUDE_TOP: False # Specifies whether the top (fully connected layers of the pre-trained model should be included)
+EPOCHS: 1 # Defines the number of times the model will iterate over the entire training dataset.
+CLASSES: 2 # Specifies the number of classes in the classification problem.
+WEIGHTS: imagenet # imagenet means that the model will be initialized with weights pre-trained on the ImageNet dataset.
+LEARNING_RATE: 0.01 # The learning rate is a crucial hyperparameter that controls how much the model's weights should change with each update.
